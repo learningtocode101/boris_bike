@@ -4,7 +4,7 @@ Maker's initial project to mimic London cycle sharing system.
 The program will emulate all the docking stations, bikes, infrastructure (repair staff, and so on) required to make the bike sharing system.
 
 ## Built with
-**TDD using Rspec and Ruby
+** TDD using Rspec and Ruby
 
 ## How to use
 ```
@@ -13,7 +13,7 @@ ruby dockingStation.rb
 ```
 
 ## Authors
-Collaborative, pair programming effort for a week among the following individuals:
+Collaborative, pair programming effort for a week amongst myself and the following individuals:
 #### Hui-An Yang 
 *Initial work involving user story, domain modeling and initial understanding of TDD*
 #### James Hotblack 

@@ -21,8 +21,16 @@ describe DockingStation do
   end
 
   it "raises an error when dock and capacity is full" do
-    DockingStation::DEFAULT_CAPACITY.times { subject.dock Bike.new }
+    subject.capacity.times { subject.dock Bike.new }
     expect { subject.dock(Bike.new) }.to raise_error("No Space Available")
   end
+
+  it "allows user to set max capacity" do
+    expect(subject.capacity).to eq DockingStation::DEFAULT_CAPACITY
+  end
+
+    # subject.initialize(capacity)
+    # expect {subject.to receive(:initialize).with(capacity)}
+
 
 end

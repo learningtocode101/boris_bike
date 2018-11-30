@@ -1,3 +1,4 @@
+
 require 'dockingStation'
 
 describe DockingStation do
@@ -28,9 +29,5 @@ describe DockingStation do
   it "allows user to set max capacity" do
     expect(subject.capacity).to eq DockingStation::DEFAULT_CAPACITY
   end
-
-    # subject.initialize(capacity)
-    # expect {subject.to receive(:initialize).with(capacity)}
-
 
 end

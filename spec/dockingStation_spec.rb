@@ -30,4 +30,8 @@ describe DockingStation do
     expect(subject.capacity).to eq DockingStation::DEFAULT_CAPACITY
   end
 
+  it "raises no error when docked bike is broken or not" do
+    allow(Bike.new).to receive(:broken?)
+    expect { subject.dock(Bike.new) }.to_not raise_error
+  end
 end
